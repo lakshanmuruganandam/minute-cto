@@ -1,0 +1,5 @@
+gradio==4.36.1
+Open Source_hub==0.23.4
+fastapi
+uvicorn
+pydantic
