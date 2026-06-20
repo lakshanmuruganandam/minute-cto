@@ -1,66 +1,72 @@
 <div align="center">
+  <h1>🧠 Minute CTO</h1>
+  <p><b>Autonomous Agent for Instant Tech Stack Architecture</b></p>
+
   <img src="https://img.shields.io/badge/STATUS-PRODUCTION_READY-brightgreen?style=for-the-badge&logo=github" alt="Status" />
   <img src="https://img.shields.io/badge/PYTHON-3.10+-blue?style=for-the-badge&logo=python" alt="Python" />
-  <img src="https://img.shields.io/badge/INFERENCE-LOCAL_EDGE-orange?style=for-the-badge&logo=fastapi" alt="Inference" />
+  <img src="https://img.shields.io/badge/FRAMEWORK-FASTAPI-009688?style=for-the-badge&logo=fastapi" alt="FastAPI" />
+  <img src="https://img.shields.io/github/actions/workflow/status/lakshanmuruganandam/minute-cto/ci.yml?style=for-the-badge&logo=githubactions" alt="Build Status" />
   <img src="https://img.shields.io/badge/LICENSE-MIT-red?style=for-the-badge&logo=opensourceinitiative" alt="License" />
 </div>
 
 <br>
 
-<div align="center">
-  <h1>🌌 Minute Cto</h1>
-  <p><b>Next-Generation Autonomous Agentic System & Local Inference Engine</b></p>
-</div>
-
-<div align="center">
-  <i>Tags: <code>#AI</code> <code>#MachineLearning</code> <code>#LocalInference</code> <code>#AutonomousAgents</code> <code>#LLM</code> <code>#Python</code> <code>#Serverless</code></i>
-</div>
-
 ---
 
-## ⚡ Executive Overview
+## ⚡ Executive Summary
 
-**Minute Cto** represents a paradigm shift in production-grade artificial intelligence. Engineered from the ground up to revolutionize autonomous reasoning, this architecture leverages state-of-the-art constraint matrices to achieve sub-second latency while seamlessly executing hyper-complex, multi-step logic workflows.
+The era of spending $200k+ on a technical co-founder to build boilerplate startup infrastructure is over. 
 
-Unlike massive, bloated monolithic cloud models, this engine is meticulously optimized to run on local edge hardware or lightweight serverless infrastructure without sacrificing reasoning capability.
+**Minute CTO** is a local autonomous agent that acts as your Chief Technology Officer. You provide it with a simple product description and target user scale, and the agent instantly generates your optimal tech stack, database schemas, and API architectures in under 60 seconds.
 
-## 🚀 Architectural Capabilities
+## 🏗️ Architecture Overview
 
-- 🧠 **Autonomous Execution:** Self-correcting neural reasoning chains that operate entirely independently of human intervention.
-- ⚡ **Local Edge Inference:** Deploys highly optimized, quantization-ready local models requiring minimal VRAM overhead.
-- 🧱 **Modular Micro-Agents:** Isolated component architecture allowing for infinitely scalable, asynchronous logic trees.
-- 🛡️ **Secure Execution:** Hardened operational environment with strict data containment, sanitization, and input validation.
+Built on a blazing-fast **FastAPI** backend, the agent processes requirements locally, ensuring absolute privacy for your startup ideas.
 
-## 🛠️ Tech Stack & Engineering
-
-- **Core Engine:** High-concurrency Python backend utilizing asynchronous event loops.
-- **Memory Management:** Highly optimized context-window indexing for rapid RAG (Retrieval-Augmented Generation).
-- **Interface:** Modern, reactive, stateless frontend paradigm ensuring zero-latency user interaction.
-
-## 💻 Deployment Protocol
-
-Getting the engine up and running takes less than 60 seconds.
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/lakshanmuruganandam/minute-cto.git
-cd minute-cto
-
-# 2. Install core dependencies
-pip install -r requirements.txt
-
-# 3. Ignite the Engine
-python app.py
+```mermaid
+graph TD;
+    Founder[Startup Founder] -->|Product Requirements| API[FastAPI Core]
+    API --> Agent[CTO Agent Model]
+    Agent -->|Generates| DB[Database Schemas]
+    Agent -->|Generates| Routes[API Routes]
+    Agent -->|Generates| Deploy[Docker/K8s Configs]
 ```
 
-<br>
+## ✨ Core Capabilities
+
+*   **Instant Architecture:** Turns "I want to build a social network for dogs" into a fully fleshed out, scalable backend architecture instantly.
+*   **Zero Cloud Dependency:** Run your requirements locally so your million-dollar ideas aren't logged by OpenAI or Anthropic servers.
+*   **Production-Ready:** Engineered with Python 3.10+, complete with CI/CD pipelines and a comprehensive test suite out of the box.
 
 ---
-<div align="center">
-  <b>Built by:</b> <a href="https://huggingface.co/LADDOO22212015">LADDOO22212015</a><br>
-  <i>Forging the absolute future of open-source autonomous agents.</i>
-</div>
 
+## 🚀 Quick Start Guide
 
-### 🧠 Preferred Model
-> `meta-llama/Meta-Llama-3-70B-Instruct` — General-purpose advanced reasoning and task execution.
+### Prerequisites
+*   Python 3.10 or higher
+
+### 1. Installation
+
+Clone the repository and install dependencies instantly using the built-in Makefile:
+```bash
+git clone https://github.com/lakshanmuruganandam/minute-cto.git
+cd minute-cto
+make install
+```
+
+### 2. Boot the Engine
+
+```bash
+make run
+```
+The API will be available at `http://127.0.0.1:8000`. You can interact with the auto-generated Swagger UI documentation at `http://127.0.0.1:8000/docs`.
+
+### 3. Run the Test Suite
+
+```bash
+make test
+```
+
+## 📝 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
