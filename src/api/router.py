@@ -1,23 +1,14 @@
-
 from fastapi import APIRouter
-from pydantic import BaseModel
+from src.models.architecture import Requirements, ArchitectureOutput
+from src.services.agent import CTOAgent
 
 api_router = APIRouter()
+agent = CTOAgent()
 
-class Requirements(BaseModel):
-    product_description: str
-    target_users: int
-
-@api_router.post("/architecture/generate")
+@api_router.post("/architecture/generate", response_model=dict)
 async def generate_architecture(req: Requirements):
-    # Core logic entrypoint for the CTO agent
-    # In a real environment, this triggers a local LLM to output a tech stack JSON.
+    arch = await agent.generate_architecture(req)
     return {
         "status": "success", 
-        "architecture": {
-            "frontend": "Next.js + TailwindCSS",
-            "backend": "FastAPI + Python",
-            "database": "PostgreSQL",
-            "deployment": "Docker + Kubernetes"
-        }
+        "architecture": arch.model_dump()
     }
